@@ -1,27 +1,37 @@
-# React + TypeScript + Vite
+<div align="center">
+<p align="center">
+  <h1 align="center">DATAGUESS TEST CASE</h1>
+  <p align="center">
+  Test-case project sent by  <a href="https://www.dataguess.com/">DATAGUESS</a>
+    <br />
+    <br />
+    <a href="https://github.com/myxsan/myxstore-admin/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/myxsan/myxstore-admin/issues">Request Feature</a>
+  </p>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="left">
 
-Currently, two official plugins are available:
+# About the Project
+## Built with
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![React](https://img.shields.io/badge/react-ffffff?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Typescript](https://img.shields.io/badge/Typescript-1d75be?style=for-the-badge&logo=typescript&logoColor=black)](https://www.typescriptlang.org/)
+[![TailwindCss](https://img.shields.io/badge/tailwind-00b1b3?style=for-the-badge&logo=tailwindcss&logoColor=black)](https://tailwindcss.com/)
 
-## Expanding the ESLint configuration
+###### Overview:
+![myxstore-admin](https://imgur.com/9e6vW50.png)
+###### Grouping:
+![myxstore-admin](https://imgur.com/e80hRWH.png)
+###### Filter & Row selection:
+![myxstore-admin](https://imgur.com/p6szkXJ.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# How to run
 
-- Configure the top-level `parserOptions` property like this:
+1. Download the repository.
+2. Open it in your editor and install packages(npm i)
+3. Run the dev server (npm run dev)
+4. Open this [link](http://localhost:5173/)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[Musa Yüksel - Linkedin](https://www.linkedin.com/in/myxsan)
