@@ -2,12 +2,12 @@
 <p align="center">
   <h1 align="center">DATAGUESS TEST CASE</h1>
   <p align="center">
-  Test-case project sent by  <a href="https://www.dataguess.com/">DATAGUESS</a>
+  Test case project from  <a href="https://www.dataguess.com/">DATAGUESS</a>
     <br />
     <br />
-    <a href="https://github.com/myxsan/myxstore-admin/issues">Report Bug</a>
+    <a href="https://github.com/myxsan/dgtc/issues">Report Bug</a>
     ·
-    <a href="https://github.com/myxsan/myxstore-admin/issues">Request Feature</a>
+    <a href="https://github.com/myxsan/dgtc/issues">Request Feature</a>
   </p>
 </p>
 
@@ -30,8 +30,12 @@
 # How to run
 
 1. Download the repository.
-2. Open it in your editor and install packages(npm i)
-3. Run the dev server (npm run dev)
-4. Open this [link](http://localhost:5173/)
+2. Open the repo with your editor and install packages(npm i)
+3. Create a .env file in the root directory and copy past the code given below
+```
+VITE_GRAPHQL_DATABASE_URL=https://countries.trevorblades.com/graphql
+```
+4. Run the dev server (npm run dev)
+5. Open this [link](http://localhost:5173/),
 
 [Musa Yüksel - Linkedin](https://www.linkedin.com/in/myxsan)
