@@ -97,6 +97,7 @@ const DataTable: FC<DataTableProps> = ({ data }) => {
       if (!grouping.length && pageParent.current) {
         const children = Array.from(pageParent.current?.children);
         const lastRowId = children[children.length - 1].id;
+        if (!lastRowId) return;
         table.getRow(lastRowId).toggleSelected();
       }
     }
@@ -233,7 +234,10 @@ const DataTable: FC<DataTableProps> = ({ data }) => {
                   colSpan={columns.length}
                   className="h-24 text-center"
                 >
-                  No results.
+                  <div
+                    className="inline-block h-8 w-8 border-slate-400 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                    role="status"
+                  />
                 </TableCell>
               </TableRow>
             )}
