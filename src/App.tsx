@@ -48,9 +48,9 @@ function App() {
   }, [loading]);
 
   return (
-    <div className="w-screen h-screen px-80 py-20 bg-gradient-to-br from-gray-900 to-gray-600 ">
+    <div className="w-screen h-screen px-80 py-20 bg-gradient-to-br from-gray-900 to-gray-600 overflow-hidden">
       <div className="flex flex-1 flex-wrap flex-col items-center ">
-        <h1 className="my-5 text-4xl font-extrabold leading-none tracking-normal text-slate-200 md:text-5xl lg:text-6xl">
+        <h1 className="my-5 text-4xl font-extrabold leading-none tracking-normal text-slate-200 sm:text-xl md:text-3xl lg:text-5xl">
           DATAGUESS TEST CASE
         </h1>
         <DataTable data={rowData ? rowData : []} />

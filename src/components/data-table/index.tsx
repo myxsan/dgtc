@@ -26,6 +26,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Input } from "../ui/input";
 import { cn, parseFilterInput } from "@/lib/utils";
 import toast from "react-hot-toast";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 interface DataTableProps {
   data: CountryColumn[];
@@ -39,6 +40,8 @@ const DataTable: FC<DataTableProps> = ({ data }) => {
   const [filterInput, setFilterInput] = useState<string>("");
 
   const pageParent = useRef<HTMLTableSectionElement | null>(null);
+
+  const { width: screenWidth } = useWindowDimensions();
 
   //I rendered 10 rows per page so every row has different bg colors when it is selected
   const colors = [
@@ -99,6 +102,15 @@ const DataTable: FC<DataTableProps> = ({ data }) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [globalFilters]);
+
+  //Table does not fit in smaller screens so I handled it here
+  useEffect(() => {
+    //Also disabled scrolling here
+    document.body.style.overflow = "hidden";
+    if (screenWidth > 1400) {
+      table.setPageSize(10);
+    } else table.setPageSize(5);
+  }, [screenWidth, table]);
 
   const handleFilter = () => {
     //Created parseFilterInput function to handle input value it transforms "a:b c:d" to {a:b, c:d}
