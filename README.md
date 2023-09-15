@@ -33,7 +33,7 @@
 2. Open the repo with your editor and install packages(npm i)
 3. Create a .env file in the root directory and copy past the code given below
 ```
-VITE_GRAPHQL_DATABASE_URL=https://countries.trevorblades.com/graphql
+VITE_GRAPHQL_API=https://countries.trevorblades.com/graphql
 ```
 4. Run the dev server (npm run dev)
 5. Open this [link](http://localhost:5173/),
